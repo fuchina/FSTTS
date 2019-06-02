@@ -17,6 +17,9 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryPlayback error:nil]; // 静音模式下也可以播放
+        
         _voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
         _utterance.voice = _voice;
         
