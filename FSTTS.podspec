@@ -11,8 +11,11 @@ Pod::Spec.new do |s|
   s.author           = { 'fudon' => '1245102331@qq.com' }
   s.source           = { :git => 'https://github.com/fuchina/FSTTS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
-  s.source_files = 'FSTTS/*'
+  s.ios.deployment_target = '13.0'
+  s.source_files = 'FSTTS/**/*'
+  
+  s.swift_version = '5.9'
+  
   s.frameworks = 'AVFoundation'
 
 
