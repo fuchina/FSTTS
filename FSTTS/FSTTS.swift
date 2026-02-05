@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-class FSTTS {
+public class FSTTS {
     
     private let synthesizer: AVSpeechSynthesizer
     private let voice: AVSpeechSynthesisVoice?
